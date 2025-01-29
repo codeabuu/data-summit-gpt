@@ -15,23 +15,23 @@ const demoData = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-white via-purple-50 to-pink-50">
       <Navbar />
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-400 bg-clip-text text-transparent">
             Your AI-Powered Data Assistant
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Transform your data into insights with our advanced AI. Analyze documents, generate charts, and interact with your datasets effortlessly.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-lg px-8 py-6 h-auto hover:from-blue-700 hover:to-indigo-700">
+            <Button className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-400 text-white text-lg px-8 py-6 h-auto hover:opacity-90">
               Get Started Free
             </Button>
-            <Button variant="outline" className="text-lg px-8 py-6 h-auto">
+            <Button variant="outline" className="text-lg px-8 py-6 h-auto border-2 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50">
               Watch Demo
             </Button>
           </div>
@@ -41,7 +41,7 @@ const Index = () => {
       {/* Features Section */}
       <section id="features" className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Powerful Features</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Powerful Features</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-6">
               <FeatureCard
@@ -50,12 +50,12 @@ const Index = () => {
                 description="Get instant answers and insights with our specialized AI assistant trained on your data."
               />
               <div className="p-4 bg-white rounded-lg shadow-lg border border-gray-100">
-                <div className="h-48 flex items-center justify-center bg-gradient-to-r from-blue-50 to-indigo-50 rounded-md">
+                <div className="h-48 flex items-center justify-center bg-gradient-to-r from-purple-50 to-pink-50 rounded-md">
                   <div className="w-full h-full flex items-center justify-center p-4">
                     <div className="space-y-2 animate-pulse w-full">
-                      <div className="h-4 bg-blue-200 rounded w-3/4"></div>
-                      <div className="h-4 bg-blue-100 rounded w-1/2"></div>
-                      <div className="h-4 bg-blue-200 rounded w-5/6"></div>
+                      <div className="h-4 bg-gradient-to-r from-purple-200 to-pink-200 rounded w-3/4"></div>
+                      <div className="h-4 bg-gradient-to-r from-pink-100 to-purple-100 rounded w-1/2"></div>
+                      <div className="h-4 bg-gradient-to-r from-purple-200 to-pink-200 rounded w-5/6"></div>
                     </div>
                   </div>
                 </div>
@@ -69,17 +69,17 @@ const Index = () => {
                 description="Automatically summarize and extract key information from your documents."
               />
               <div className="p-4 bg-white rounded-lg shadow-lg border border-gray-100">
-                <div className="h-48 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-md p-4">
+                <div className="h-48 bg-gradient-to-r from-orange-50 to-pink-50 rounded-md p-4">
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2">
-                      <div className="w-6 h-6 rounded bg-blue-200"></div>
-                      <div className="h-4 bg-blue-100 rounded w-3/4"></div>
+                      <div className="w-6 h-6 rounded bg-gradient-to-r from-orange-200 to-pink-200"></div>
+                      <div className="h-4 bg-gradient-to-r from-pink-100 to-orange-100 rounded w-3/4"></div>
                     </div>
-                    <div className="h-24 bg-white/50 rounded-md border border-blue-100 p-2">
+                    <div className="h-24 bg-white/50 rounded-md border border-pink-100 p-2">
                       <div className="space-y-2">
-                        <div className="h-2 bg-blue-100 rounded w-full"></div>
-                        <div className="h-2 bg-blue-100 rounded w-5/6"></div>
-                        <div className="h-2 bg-blue-100 rounded w-4/6"></div>
+                        <div className="h-2 bg-gradient-to-r from-orange-100 to-pink-100 rounded w-full"></div>
+                        <div className="h-2 bg-gradient-to-r from-pink-100 to-orange-100 rounded w-5/6"></div>
+                        <div className="h-2 bg-gradient-to-r from-orange-100 to-pink-100 rounded w-4/6"></div>
                       </div>
                     </div>
                   </div>
@@ -106,8 +106,8 @@ const Index = () => {
                     />
                     <defs>
                       <linearGradient id="colorGradient" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="#2563eb" />
-                        <stop offset="100%" stopColor="#4f46e5" />
+                        <stop offset="0%" stopColor="#8B5CF6" />
+                        <stop offset="100%" stopColor="#EC4899" />
                       </linearGradient>
                     </defs>
                   </BarChart>
@@ -119,11 +119,11 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+      <section className="py-20 px-4 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-400 text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Data?</h2>
           <p className="text-xl mb-8 opacity-90">Join thousands of users who are already leveraging our AI tools.</p>
-          <Button className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-6 h-auto">
+          <Button className="bg-white text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-600 to-orange-400 hover:bg-gray-100 text-lg px-8 py-6 h-auto">
             Start Free Trial
           </Button>
         </div>
