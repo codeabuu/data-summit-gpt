@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/Navbar";
 import { FeatureCard } from "@/components/FeatureCard";
 import { ChartContainer, ChartTooltip } from "@/components/ui/chart";
-import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, XAxis, YAxis } from "recharts";
 
 const demoData = [
   { month: "Jan", value: 400 },
@@ -125,6 +125,7 @@ const Index = () => {
                       dataKey="value"
                       fill="url(#colorGradient)"
                       radius={[4, 4, 0, 0]}
+                      className="animate-bar-float"
                     />
                     <defs>
                       <linearGradient id="colorGradient" x1="0" y1="0" x2="0" y2="1">
