@@ -40,8 +40,8 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 overflow-hidden">
-        <div className="container mx-auto text-center">
+      <section className="pt-32 pb-20 px-4">
+        <div className="max-w-7xl mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-400 bg-clip-text text-transparent leading-tight">
               Your AI-Powered Data Assistant
@@ -63,12 +63,12 @@ const Index = () => {
 
       {/* Features Section */}
       <section id="features" className="py-20 px-4">
-        <div className="container mx-auto">
+        <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Powerful Features
           </h2>
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            <div className="space-y-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <div className="space-y-8">
               <FeatureCard
                 icon={Brain}
                 title="Custom GPT Assistant"
@@ -96,7 +96,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="space-y-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            <div className="space-y-8">
               <FeatureCard
                 icon={FileText}
                 title="Document Analysis"
@@ -121,7 +121,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="space-y-8 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+            <div className="space-y-8">
               <FeatureCard
                 icon={FileSpreadsheet}
                 title="Data Visualization"
@@ -164,7 +164,7 @@ const Index = () => {
 
       {/* Stats Section */}
       <section className="py-20 px-4 bg-white/50 backdrop-blur-sm">
-        <div className="container mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-8 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-100 shadow-lg transform hover:scale-105 transition-all duration-300">
               <div className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">10,000+</div>
@@ -184,7 +184,7 @@ const Index = () => {
 
       {/* Testimonials Section */}
       <section className="py-20 px-4">
-        <div className="container mx-auto">
+        <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             What Our Users Say
           </h2>
@@ -210,7 +210,7 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="py-20 px-4">
-        <div className="container mx-auto relative overflow-hidden rounded-3xl">
+        <div className="max-w-7xl mx-auto relative overflow-hidden rounded-3xl">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-400 opacity-90"></div>
           <div className="relative py-16 px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Transform Your Data?</h2>
