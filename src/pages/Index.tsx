@@ -1,9 +1,9 @@
-import { Brain, FileSpreadsheet, FileText } from "lucide-react";
+import { Brain, FileSpreadsheet, FileText, ChartBar, Users, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/Navbar";
 import { FeatureCard } from "@/components/FeatureCard";
 import { ChartContainer, ChartTooltip } from "@/components/ui/chart";
-import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, XAxis, YAxis } from "recharts";
 
 const demoData = [
   { month: "Jan", value: 400 },
@@ -11,6 +11,27 @@ const demoData = [
   { month: "Mar", value: 600 },
   { month: "Apr", value: 800 },
   { month: "May", value: 500 },
+];
+
+const testimonials = [
+  {
+    name: "Sarah Johnson",
+    role: "Data Scientist",
+    company: "TechCorp",
+    content: "This tool has revolutionized how we analyze our data. The GPT integration is phenomenal!"
+  },
+  {
+    name: "Michael Chen",
+    role: "Business Analyst",
+    company: "Growth Inc",
+    content: "The document analysis feature saves us hours of work. Absolutely worth every penny."
+  },
+  {
+    name: "Emma Davis",
+    role: "Research Lead",
+    company: "Innovation Labs",
+    content: "The chart generation capabilities are unmatched. It's transformed our reporting process."
+  }
 ];
 
 const Index = () => {
@@ -125,6 +146,7 @@ const Index = () => {
                       dataKey="value"
                       fill="url(#colorGradient)"
                       radius={[4, 4, 0, 0]}
+                      className="animate-float"
                     />
                     <defs>
                       <linearGradient id="colorGradient" x1="0" y1="0" x2="0" y2="1">
@@ -136,6 +158,52 @@ const Index = () => {
                 </ChartContainer>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20 px-4 bg-white/50 backdrop-blur-sm">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center p-8 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-100 shadow-lg transform hover:scale-105 transition-all duration-300">
+              <div className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">10,000+</div>
+              <div className="text-gray-600">Active Users</div>
+            </div>
+            <div className="text-center p-8 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-100 shadow-lg transform hover:scale-105 transition-all duration-300">
+              <div className="text-4xl font-bold bg-gradient-to-r from-pink-600 to-orange-400 bg-clip-text text-transparent mb-2">1M+</div>
+              <div className="text-gray-600">Documents Analyzed</div>
+            </div>
+            <div className="text-center p-8 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-100 shadow-lg transform hover:scale-105 transition-all duration-300">
+              <div className="text-4xl font-bold bg-gradient-to-r from-orange-400 to-purple-600 bg-clip-text text-transparent mb-2">500K+</div>
+              <div className="text-gray-600">Charts Generated</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            What Our Users Say
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div 
+                key={index}
+                className="p-6 bg-white rounded-xl shadow-lg border border-gray-100 transform hover:scale-105 transition-all duration-300"
+              >
+                <p className="text-gray-600 mb-4">{testimonial.content}</p>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-400 to-pink-400"></div>
+                  <div>
+                    <div className="font-semibold text-gray-800">{testimonial.name}</div>
+                    <div className="text-sm text-gray-500">{testimonial.role}, {testimonial.company}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
