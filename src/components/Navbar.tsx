@@ -15,7 +15,7 @@ export const Navbar = () => {
           
           <div className="hidden md:flex items-center space-x-12">
             <a href="#features" className="text-gray-600 hover:text-purple-600 transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-gradient-to-r after:from-purple-600 after:to-pink-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">Features</a>
-            <a href="#pricing" className="text-gray-600 hover:text-pink-600 transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-gradient-to-r after:from-pink-600 after:to-orange-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">Pricing</a>
+            <Link to="/pricing" className="text-gray-600 hover:text-pink-600 transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-gradient-to-r after:from-pink-600 after:to-orange-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">Pricing</Link>
             <a href="#about" className="text-gray-600 hover:text-orange-400 transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-gradient-to-r after:from-orange-400 after:to-purple-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">About</a>
           </div>
 
